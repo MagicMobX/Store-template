@@ -14,15 +14,19 @@ body{
     align-items:center;
     background-color: rgb(224, 101, 19);
     z-index: 9999;
+    padding: 5px 10px;
+    flex-wrap: wrap;
 }
 .search-box{
     display:flex;
     gap:0;
     border:none;
     outline: none;
-    flex:1;
-    max-width:500px;
+    flex: 1 1 auto;
+    min-width: 100px;
+    max-width: 100%;
     border-radius: 20px;
+    overflow: hidden;
 }
 a{
     text-decoration: none;
@@ -30,6 +34,10 @@ a{
     padding-bottom: 20px;
     font-weight: bold;
     font-size: 1.2rem;
+     white-space: nowrap;
+}
+.Sign-In, .Cart, .Search, .menuBtn {
+    flex-shrink: 0; 
 }
 a:hover{
     text-decoration: underline;
@@ -158,96 +166,4 @@ h3{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     height: 25vh;
     cursor: pointer;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-html, body {
-  width: 100%;
-  max-width: 100%;
-  overflow-x: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.shop-head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  background: #e56000;
-  padding: 10px;
-  width: 100%;
-  gap: 10px;
-}
-
-.shop-head h1 {
-  font-size: 1.8rem;
-  color: #000;
-  margin: 0;
-  flex: 1 1 auto;
-  text-align: center;
-}
-
-.menuBtn {
-  background: none;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.search-box {
-  display: flex;
-  align-items: center;
-  flex: 1 1 250px;
-  max-width: 400px;
-}
-
-.search-input {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  border-radius: 8px 0 0 8px;
-  font-size: 1rem;
-  outline: none;
-}
-
-.Search {
-  border: none;
-  background: #fff;
-  border-radius: 0 8px 8px 0;
-  padding: 8px 10px;
-  cursor: pointer;
-}
-
-.Sign-In, .Cart {
-  background: none;
-  border: none;
-  font-size: 1rem;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  cursor: pointer;
-}
-
-@media (max-width: 600px) {
-  .shop-head {
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .search-box {
-    flex: 1 1 100%;
-    max-width: 100%;
-  }
-
-  .shop-head h1 {
-    font-size: 1.4rem;
-  }
-
-  .Sign-In, .Cart {
-    font-size: 0.9rem;
-  }
 }
