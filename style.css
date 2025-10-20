@@ -85,17 +85,21 @@ h1{
     font-style: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-.Search{
+.Search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     outline: none;
-    border:none;
-    color: rgb(0, 0, 0);
-    width:100px;
-    height:35px;
-    font-weight:bold;
-    font-size: 1rem;
+    border: none;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
     cursor: pointer;
     border-radius: 0 10px 10px 0;
+    background-color: transparent;
+    flex-shrink: 0;
 }
+
 .menuBtn{
     outline: none;
     border:none;
