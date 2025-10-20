@@ -19,7 +19,7 @@ body{
 }
 .shop-head .logo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     font-weight: bolder;
     white-space: nowrap;
     flex-shrink: 0;
@@ -106,7 +106,7 @@ a:hover{
 h1{
     padding:10px;
     font-weight: bolder;
-    font-size: 2.4rem;
+    font-size: 1.7rem;
     font-style: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
