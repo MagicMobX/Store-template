@@ -159,3 +159,50 @@ h3{
     height: 25vh;
     cursor: pointer;
 }
+.shop-head {
+  flex-wrap: wrap;
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.search-box {
+  flex: 1 1 100%;
+  max-width: 100%;
+  margin-top: 10px;
+  justify-content: center;
+}
+
+.search-input {
+  width: 70%;
+  max-width: 300px;
+}
+
+.Sign-In, .Cart, .menuBtn, .Search {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .search-input {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .search-box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .Sign-In, .Cart, .menuBtn {
+    font-size: 0.9rem;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
