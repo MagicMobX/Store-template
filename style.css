@@ -160,63 +160,94 @@ h3{
     cursor: pointer;
 }
 
-body {
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  max-width: 100%;
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .shop-head {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  background: #e56000;
   padding: 10px;
-  max-width: 100%;
   width: 100%;
-  box-sizing: border-box;
-  overflow: hidden;
+  gap: 10px;
+}
+
+.shop-head h1 {
+  font-size: 1.8rem;
+  color: #000;
+  margin: 0;
+  flex: 1 1 auto;
+  text-align: center;
+}
+
+.menuBtn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .search-box {
   display: flex;
   align-items: center;
-  flex: 1 1 100%;
-  justify-content: center;
-  gap: 0;
-  max-width: 100%;
-  margin: 10px 0;
+  flex: 1 1 250px;
+  max-width: 400px;
 }
 
 .search-input {
   flex: 1;
-  min-width: 0;
-  width: 100%;
-  max-width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 8px 0 0 8px;
   font-size: 1rem;
+  outline: none;
 }
 
 .Search {
-  width: auto;
-  white-space: nowrap;
+  border: none;
+  background: #fff;
+  border-radius: 0 8px 8px 0;
+  padding: 8px 10px;
+  cursor: pointer;
 }
 
-.menuBtn, .Sign-In, .Cart {
-  flex-shrink: 0;
-  width: auto;
-  padding: 6px 8px;
+.Sign-In, .Cart {
+  background: none;
+  border: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .shop-head {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .search-box {
-    width: 90%;
+    flex: 1 1 100%;
+    max-width: 100%;
   }
 
-  .search-input {
-    width: 100%;
+  .shop-head h1 {
+    font-size: 1.4rem;
+  }
+
+  .Sign-In, .Cart {
+    font-size: 0.9rem;
   }
 }
