@@ -1,3 +1,11 @@
+
+const menuBtn = document.getElementById('menuBtn');
+const menuBar = document.getElementById('menuBar');
+
+menuBtn.addEventListener('click', () => {
+  menuBar.classList.toggle('active');
+});
+
 console.clear();
 console.log("✅ Fast script.js loaded");
 
