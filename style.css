@@ -13,14 +13,14 @@ body{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(224, 101, 19);
-    padding: 5px 10px;
+    padding: 5px 5px;
     z-index: 9999;
     flex-wrap: nowrap;
 }
 .shop-head .logo {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 1.7rem;
-    font-weight: bolder;
+    font-size: 1rem;
+    font-weight: bold;
     white-space: nowrap;
     flex-shrink: 0;
 }
@@ -38,7 +38,7 @@ body{
     padding:4px 10px;
     border:none;
     outline:none;
-    font-size: larger;
+    font-size: large;
     border-radius: 10px 0 0 10px;
     background-color:oklch(89.306% 0.00871 225.577);
 }
@@ -48,7 +48,7 @@ body{
     justify-content: center;
     outline: none;
     border: none;
-    width: 40px;
+    width: 35px;
     height: 35px;
     font-size: 1.2rem;
     cursor: pointer;
@@ -58,13 +58,12 @@ body{
 }
 .Cart, .Sign-In{
     flex-shrink: 0;
-    margin-left: 10px;
+    margin-right: auto;
     cursor: pointer;
     background-color: transparent;
     border: none;
-    padding: 5px 10px;
+    padding: 5px ;
     font-size: 1rem;
-    border-radius: 10px;
 }
 a{
     text-decoration: none;
@@ -106,7 +105,7 @@ a:hover{
 h1{
     padding:10px;
     font-weight: bolder;
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-style: bold;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
@@ -151,24 +150,31 @@ h3{
         width: 100%;
         margin: 5px 0;
     }
-    .Cart, .Sign-In, .menuBtn {
-        order: 3;
-        width: auto;
-    }
+    
+    
 }
 .menuBtn {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
     outline: none;
     border: none;
     color: black;
     background-color: transparent;
-    width: 50px;
-    height: 50px;
+    width: 20px;
+    height: 40px;
     font-size: 2rem;
     cursor: pointer;
     flex-shrink: 0;
     margin-left: 0;
     z-index: 9999;
+}
+.head-main{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(224, 101, 19);
+    padding: 0;
+    z-index: 9999;
+    flex-wrap: nowrap;
+    gap:0;
+    margin-right: auto;
 }
